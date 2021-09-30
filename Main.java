@@ -1,10 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-      String message = "Hello, world!";
-        print(message);
+        int n = 5;
+        String message = "Hello, world!";
+        print(n, message);
     }
 
-    static void print(String message){
+    static void print(String message) {
         System.out.println(message);
+    }
+
+    static void print(int n, String message) {
+        int counter = 0;
+        while (counter < n) {
+            System.out.println(message);
+            counter++;
+        }
     }
 }
